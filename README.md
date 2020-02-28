@@ -9,7 +9,7 @@ Stable tag: 4.3
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](sethwstevenson@gmail.com)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](sethwstevenson@gmail.com)
 
 Adds extra options to Beaver Builder's conditional logic settings
 
