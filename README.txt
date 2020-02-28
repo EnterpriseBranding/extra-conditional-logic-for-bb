@@ -1,6 +1,8 @@
 === BB Extra Conditional Logic ===
 Contributors: SethStevenson
-Donate link: https://sethstevenson.net
+Author link: https://sethstevenson.net
+Plugin link: https://github.com/sethstevenson/bb-extra-conditional-logic
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LCWVUSBYJPZ7N&source=url
 Tags: beaver builder, conditional logic, bb
 Requires at least: 3.0.1
 Tested up to: 3.4
