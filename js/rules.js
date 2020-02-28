@@ -21,3 +21,63 @@ addRuleType( 'bb-extra-conditional-logic/paged', {
         },
     },
 });
+
+// Post Format
+addRuleType( 'bb-extra-conditional-logic/post-format', {
+    label: __( 'Post Format' ),
+    category: 'post',
+    form: {
+        operator: {
+            type: 'operator',
+            operators: [
+                'equals',
+                'does_not_equal',
+            ],
+        },
+        format: {
+            type: 'select',
+            options: [
+              {
+                label: 'Standard',
+                value: 'standard',
+              },
+              {
+                label: 'Aside',
+                 value: 'aside',
+              },
+              {
+                label: 'Audio',
+                value: 'audio',
+              },
+              {
+                label: 'Chat',
+                value: 'chat',
+              },
+              {
+                label: 'Gallery',
+                value: 'gallery',
+              },
+              {
+                label: 'Image',
+                value: 'image',
+              },
+              {
+                label: 'Link',
+                value: 'link',
+              },
+              {
+                label: 'Quote',
+                value: 'quote',
+              },
+              {
+                label: 'Status',
+                value: 'status',
+              },
+              {
+                label: 'Video',
+                value: 'video',
+              },
+            ]
+          },
+    },
+});

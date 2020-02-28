@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Beaver Builder Extra Conditional Logic
- * Plugin URI: http://www.wpbeaverbuilder.com
+ * Plugin Name: BB Extra Conditional Logic
+ * Plugin URI: https://github.com/sethstevenson/bb-extra-conditional-logic
  * Description: Adds extra options to Beaver Builder's conditional logic settings
  * Version: 1.0.0
  * Author: Seth Stevenson
