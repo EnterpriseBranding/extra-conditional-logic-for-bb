@@ -18,6 +18,7 @@ Adds extra options to Beaver Builder's conditional logic settings including:
 
 *   Archive page number
 *   Post format
+*   User country code
 
 == Installation ==
 

@@ -13,7 +13,8 @@ class Bb_Extra_Conditional_Logic_Rules {
 		add_action( 'bb_logic_init', function() {
 			BB_Logic_Rules::register( array(
 				'bb-extra-conditional-logic/paged' => array($this, 'paged_evaluation'),
-				'bb-extra-conditional-logic/post-format' => array ($this, 'post_format_evaluation')
+				'bb-extra-conditional-logic/post-format' => array ($this, 'post_format_evaluation'),
+				'bb-extra-conditional-logic/user-country-code' => array($this, 'user_country_code'),
 			) );
 		});
 	}
@@ -59,6 +60,53 @@ class Bb_Extra_Conditional_Logic_Rules {
 			'compare' => $rule->format,
 		) );
 
+	}
+	
+	/**
+	 * User Country Code
+	 * 
+	 * @param [type] $rule
+	 * @return void
+	 * @since 1.0.0
+	 * 
+	 * Credit: https://thewpdaily.com/row-module-based-visitor-country-location-beaver-builder/
+	 */
+	
+	public function user_country_code( $rule ) {
+		// Get local IP address
+    $ip = $_SERVER['REMOTE_ADDR'];
+ 
+		if ( 
+			isset( $_SERVER['HTTP_X_FORWARDED_FOR'] ) && 
+			filter_var( @$_SERVER['HTTP_X_FORWARDED_FOR'], FILTER_VALIDATE_IP )
+			) {
+				$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+			}
+        
+ 
+    if (
+			isset( $_SERVER['HTTP_CLIENT_IP'] ) && 
+			filter_var( @$_SERVER['HTTP_CLIENT_IP'], FILTER_VALIDATE_IP )
+			) {
+				$ip = $_SERVER['HTTP_CLIENT_IP'];
+			}
+    
+    // Get local geolocation data as json type
+    $json = file_get_contents('http://www.geoplugin.net/json.gp?ip=' . $ip );
+    $data = json_decode($json);
+    $countryCode = strtoupper( substr( $data->geoplugin_currencyCode, 0, 2) );
+ 
+    if( $rule->operator == "includes" || $rule->operator == "does_not_include" ) {
+        $codes = $rule->compare;
+        $rule->compare = $countryCode;
+        $countryCode = explode( ',', strtoupper( $codes ) );
+    }
+    
+    return BB_Logic_Rules::evaluate_rule( array(
+        'value'     	=> $countryCode,
+        'operator'    => $rule->operator,
+        'compare'     => strtoupper( $rule->compare ),
+    ) );
 	}
 
 }

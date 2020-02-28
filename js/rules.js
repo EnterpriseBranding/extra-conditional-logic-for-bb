@@ -81,3 +81,25 @@ addRuleType( 'bb-extra-conditional-logic/post-format', {
           },
     },
 });
+
+
+// User country code
+addRuleType( 'bb-extra-conditional-logic/user-country-code', {
+    label: __( 'User Country Code' ),
+    category: 'user',
+    form: {
+        operator: {
+            type: 'operator',
+            operators: [
+                'equals',
+                'does_not_equal',
+                'includes',
+                'does_not_include'
+            ],
+        },
+        compare: {
+            type: 'text',
+            defaultValue: 'US',
+        },
+    },
+} )
