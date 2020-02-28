@@ -1,12 +1,12 @@
 # BB Extra Conditional Logic
 
-Author: Seth Stevenson
-Author link: https://sethstevenson.net
-Tags: beaver builder, conditional logic, bb
-Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
-License: GPLv2 or later
+Author: Seth Stevenson  
+Author link: https://sethstevenson.net  
+Tags: beaver builder, conditional logic, bb  
+Requires at least: 3.0.1  
+Tested up to: 3.4  
+Stable tag: 4.3  
+License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](sethwstevenson@gmail.com)
@@ -18,7 +18,7 @@ Adds extra options to Beaver Builder's conditional logic settings
 Adds extra options to Beaver Builder's conditional logic settings including:
 
 *   Archive page number
-*   More coming soon
+*   Post format
 
 ## Installation
 

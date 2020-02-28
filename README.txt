@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== BB Extra Conditional Logic ===
 Contributors: SethStevenson
 Donate link: https://sethstevenson.net
 Tags: beaver builder, conditional logic, bb
