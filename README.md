@@ -1,4 +1,4 @@
-# BB Extra Conditional Logic
+# Extra Conditional Logic for Beaver Builder
 
 Author: Seth Stevenson  
 Author link: https://sethstevenson.net  

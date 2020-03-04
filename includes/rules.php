@@ -6,15 +6,15 @@
  * @since 1.0.0
  */
 
-class Bb_Extra_Conditional_Logic_Rules {
+class Extra_Conditional_Logic_For_Bb_Rules {
 
 	public function init() {
 
 		add_action( 'bb_logic_init', function() {
 			BB_Logic_Rules::register( array(
-				'bb-extra-conditional-logic/paged' => array($this, 'paged_evaluation'),
-				'bb-extra-conditional-logic/post-format' => array ($this, 'post_format_evaluation'),
-				'bb-extra-conditional-logic/user-country-code' => array($this, 'user_country_code'),
+				'extra-conditional-logic-for-bb/paged' => array($this, 'paged_evaluation'),
+				'extra-conditional-logic-for-bb/post-format' => array ($this, 'post_format_evaluation'),
+				'extra-conditional-logic-for-bb/user-country-code' => array($this, 'user_country_code'),
 			) );
 		});
 	}

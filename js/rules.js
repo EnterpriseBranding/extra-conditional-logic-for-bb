@@ -2,7 +2,7 @@ var addRuleType = BBLogic.api.addRuleType
 var __ = BBLogic.i18n.__
 
 // Paged
-addRuleType( 'bb-extra-conditional-logic/paged', {
+addRuleType( 'extra-conditional-logic-for-bb/paged', {
     label: __( 'Archive Page' ),
     category: 'archive',
     form: {
@@ -23,7 +23,7 @@ addRuleType( 'bb-extra-conditional-logic/paged', {
 });
 
 // Post Format
-addRuleType( 'bb-extra-conditional-logic/post-format', {
+addRuleType( 'extra-conditional-logic-for-bb/post-format', {
     label: __( 'Post Format' ),
     category: 'post',
     form: {
@@ -84,7 +84,7 @@ addRuleType( 'bb-extra-conditional-logic/post-format', {
 
 
 // User country code
-addRuleType( 'bb-extra-conditional-logic/user-country-code', {
+addRuleType( 'extra-conditional-logic-for-bb/user-country-code', {
     label: __( 'User Country Code' ),
     category: 'user',
     form: {

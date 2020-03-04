@@ -1,4 +1,4 @@
-=== BB Extra Conditional Logic ===
+=== Extra Conditional Logic for Beaver Builder ===
 Contributors: SethStevenson
 Author link: https://sethstevenson.net
 Plugin link: https://github.com/sethstevenson/bb-extra-conditional-logic
